@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.atas header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+.intro {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.photo {
+    margin: 20px 0;
+}
+
+.fotokami {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.photo-item {
+    position: relative;
+    text-align: center;
+}
+
+.gambar-kelompok img {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover; 
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.detail-table {
+    display: none;
+    margin: 10px auto;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 200px;
+}
+
+.detail-table td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}

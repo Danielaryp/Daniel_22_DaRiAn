@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengecilkan Gambar dengan CSS</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <section class="atas">
+        <header>
+            <h1><b>KELOMPOK DARIAN</b></h1>
+        </header>
+    </section>
+
+    <section class="intro">
+        <p>Ini adalah kelompok DARIAN. Kami terdiri dari
+            <span class="name"><b>Daniel</b></span>, 
+            <span class="name"><b>Rifqi</b></span>, dan 
+            <span class="name"><b>Ananta</b></span>. 
+            Pada hari ini kami akan membuat biodata kelompok kami. <br> Berikut merupakan identitas kami:
+        </p>
+    </section>
+
+    <section class="photo">
+        <h3>FOTO KAMI</h3>
+        <div class="fotokami">
+            <div class="photo-item">
+                <p>Daniel</p>
+                <div class="gambar-kelompok">
+                    <img src="danil.jpg" alt="Foto Daniel">
+                </div>
+                <button onclick="toggleDetails('detailDaniel')">Detail</button>
+                <table id="detailDaniel" class="detail-table">
+                    <tr>
+                        <td>Nama</td>
+                        <td>Daniel</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>XIRPL2</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>Tabanan</td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="photo-item">
+                <p>Ananta</p>
+                <div class="gambar-kelompok">
+                    <img src="anantan.jpg" alt="Foto Ananta">
+                </div>
+                <button onclick="toggleDetails('detailAnanta')">Detail</button>
+                <table id="detailAnanta" class="detail-table">
+                    <tr>
+                        <td>Nama</td>
+                        <td>Ananta</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>XIRPL2</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>Jl. Pondok Indah 4 No 3</td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="photo-item">
+                <p>Rifqi</p>
+                <div class="gambar-kelompok">
+                    <img src="ripki.jpg" alt="Foto Rifqi">
+                </div>
+                <button onclick="toggleDetails('detailRifqi')">Detail</button>
+                <table id="detailRifqi" class="detail-table">
+                    <tr>
+                        <td>Nama</td>
+                        <td>Rifqi</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>XIRPL2</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>Perumahan Tegal Buah</td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleDetails(id) {
+            var detailTable = document.getElementById(id);
+            detailTable.style.display = (detailTable.style.display === 'none' || detailTable.style.display === '') ? 'table' : 'none';
+        }
+    </script>
+
+    <p>Berikut merupakan link dari Sosial Media kami:</p>
+    <a href="https://www.instagram.com/antds._/"> IG Ananta <br></a>
+    <a href="https://www.instagram.com/made_daniel_/"> IG Daniel <br></a>
+    <a href="https://www.instagram.com/zachrrd/"> IG Rifqi <br></a>
+</body>
+</html>
